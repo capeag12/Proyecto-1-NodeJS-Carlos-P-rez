@@ -22,6 +22,8 @@ function pedirTiempo() {
                 parrafoMostrar.textContent = `El tiempo en ${ciudad}, tiene una temperatura de ${temperatura}º, y una humedad de ${humedad}% `
             }
         })
+    }).catch((err)=>{
+        parrafoMostrar.textContent = `El backend ha fallado`
     })
     txtCiudad.value = ""
 }

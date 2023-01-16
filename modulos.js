@@ -14,7 +14,7 @@ exports.pedirTiempo = (ciudad, manipulacion)=>{
             })
         } else{
             let clima = new Clima(res.data.current.temperature, res.data.current.humidity)
-        manipulacion(clima)
+            manipulacion(clima)
         } 
     }).catch((err)=>{
         
