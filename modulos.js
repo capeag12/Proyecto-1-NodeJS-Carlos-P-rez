@@ -6,7 +6,7 @@ exports.pedirTiempo = (ciudad, manipulacion)=>{
     console.log(url)
     axios.get(url).then((res)=>{
         console.log(res.data.success)
-        //El error no funciona
+        
         if (res.data.success == false) {
             console.log("Error")
             manipulacion({
